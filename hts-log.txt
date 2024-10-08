@@ -1,0 +1,44 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 01 Oct 2024 22:19:03 at https://qualitybio.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://qualitybio.in/ -O1 "C:\Users\mitta\Downloads\Biofuel Website" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:21:05	Error: 	"Method Not Allowed" (405) at link https://qualitybio.in/xmlrpc.php (from https://qualitybio.in/)
+22:22:13	Error: 	"Not Found" (404) at link https://qualitybio.in/www.twitter.com (from https://qualitybio.in/)
+22:22:13	Error: 	"Not Found" (404) at link https://qualitybio.in/www.instagram.com (from https://qualitybio.in/)
+22:22:13	Error: 	"Not Found" (404) at link https://qualitybio.in/www.facebook.com (from https://qualitybio.in/)
+22:22:13	Warning: 	File not parsed, looks like binary: https://qualitybio.in/wp-content/plugins/revslider/public/assets/css/openhand.cur
+22:22:13	Warning: 	File not parsed, looks like binary: https://qualitybio.in/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/wp-content/themes/bridge/css/img/box_image_shadow.png (from https://qualitybio.in/wp-content/themes/bridge/css/stylesheet.min.css?ver=6.6.2)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/wp-content/themes/bridge/images/prettyPhoto/facebook/default_thumbnail.gif (from https://qualitybio.in/wp-content/themes/bridge/css/stylesheet.min.css?ver=6.6.2)
+22:22:14	Warning: 	Moved Permanently for https://qualitybio.in/?p=128
+22:22:14	Warning: 	File has moved from https://qualitybio.in/?p=128 to https://qualitybio.in/about/
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/about/www.twitter.com (from https://qualitybio.in/about/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/about/www.instagram.com (from https://qualitybio.in/about/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/about/www.facebook.com (from https://qualitybio.in/about/)
+22:22:14	Warning: 	Moved Permanently for https://qualitybio.in/?p=136
+22:22:14	Warning: 	File has moved from https://qualitybio.in/?p=136 to https://qualitybio.in/products/
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/products/www.twitter.com (from https://qualitybio.in/products/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/products/www.instagram.com (from https://qualitybio.in/products/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/products/www.facebook.com (from https://qualitybio.in/products/)
+22:22:14	Warning: 	Moved Permanently for https://qualitybio.in/?p=558
+22:22:14	Warning: 	File has moved from https://qualitybio.in/?p=558 to https://qualitybio.in/impact-and-sustainability/
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/impact-and-sustainability/www.twitter.com (from https://qualitybio.in/impact-and-sustainability/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/impact-and-sustainability/www.instagram.com (from https://qualitybio.in/impact-and-sustainability/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/impact-and-sustainability/www.facebook.com (from https://qualitybio.in/impact-and-sustainability/)
+22:22:14	Warning: 	Moved Permanently for https://qualitybio.in/?p=512
+22:22:14	Warning: 	File has moved from https://qualitybio.in/?p=512 to https://qualitybio.in/quality-testing/
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/quality-testing/www.twitter.com (from https://qualitybio.in/quality-testing/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/quality-testing/www.instagram.com (from https://qualitybio.in/quality-testing/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/quality-testing/www.facebook.com (from https://qualitybio.in/quality-testing/)
+22:22:14	Warning: 	Moved Permanently for https://qualitybio.in/?p=562
+22:22:14	Warning: 	File has moved from https://qualitybio.in/?p=562 to https://qualitybio.in/contact/
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/contact/www.twitter.com (from https://qualitybio.in/contact/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/contact/www.instagram.com (from https://qualitybio.in/contact/)
+22:22:14	Error: 	"Not Found" (404) at link https://qualitybio.in/contact/www.facebook.com (from https://qualitybio.in/contact/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 11 seconds : 394 links scanned, 367 files written (11680567 bytes overall) [11740403 bytes received at 61468 bytes/sec], 1556805 bytes transferred using HTTP compression in 26 files, ratio 20%, 10.3 requests per connection
+(21 errors, 12 warnings, 0 messages)
