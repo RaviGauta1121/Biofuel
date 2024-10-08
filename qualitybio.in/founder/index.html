@@ -137,113 +137,144 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
-
         .main_container {
-            margin-top: 5rem;
-        }
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
 
-        .container {
-            width: 94%;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding: 6rem 1rem;
-            justify-content: space-between;
+/* Base container styling */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+     /* Optional background */
+}
 
-            border-radius: 1.5rem;
-            margin-bottom: 2rem;
+/* Flex layout for content */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
 
-        }
+/* Header styling */
+.header {
+    position: relative;
+}
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            width: 100%;
-        }
+.line {
+    height: 2px;
+    width: 8rem;
+    background-color: #047857;
+    position: absolute;
+    top: -0.5rem;
+    left: -2rem;
+}
 
+.title {
+    color: #065f46;
+    font-weight: 700;
+    font-size: 1.875rem;
+}
 
-        .header {
-            position: relative;
-        }
+.subtitle {
+    padding: 0.25rem 0;
+    color: #065f46;
+    font-weight: 600;
+}
 
-        .line {
-            height: 1px;
-            width: 8rem;
-            background-color: #047857;
-            /* Dark green underline */
-            position: absolute;
-            top: -0.5rem;
-            left: -2rem;
-        }
+/* Description styling */
+.description {
+    line-height: 1.6;
+    color: #333;
+}
 
-        .title {
-            color: #065f46;
-            /* Dark green for title */
-            font-weight: 700;
-            font-size: 1.875rem;
-        }
+/* Responsive image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
 
-        .subtitle {
-            padding: 0.25rem 0;
-            color: #065f46;
-            /* Dark green for subtitle */
-            font-weight: 600;
-        }
+.image {
+    width: 100%;
+    max-width: 350px; /* Limits image size on small screens */
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 4px solid #065f46;
+}
 
-        @media (min-width: 1024px) {
-            .container {
-                flex-direction: row;
-                padding: 6rem 3rem;
-            }
-        }
+/* Mission/Vision titles */
+.work-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #047857;
+    margin-top: 1rem;
+}
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            width: 100%;
-        }
+/* Responsive behavior */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-        }
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-        @media (min-width: 1024px) {
-            .image-container {
-                justify-content: flex-end;
-            }
-        }
+    .text-content {
+        width: 60%;
+    }
 
-        .image {
-            height: 60vh;
-            width: 29vw;
-            object-fit: cover;
-            border-radius: 9rem;
-            border: 4px solid #065f46;
-            /* Dark green border */
+    .image-container {
+        width: 40%;
+        justify-content: flex-end;
+    }
 
-        }
+    .image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
+    }
+}
 
+@media (min-width: 1024px) {
+    .container {
+        padding: 4rem 3rem;
+    }
 
-        @media (min-width: 1024px) {
-            .content {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
+    .content {
+        flex-direction: row;
+    }
 
-            .text-content {
-                width: 66.666667%;
-                /* Two-thirds of the width for text */
-            }
+    .text-content {
+        width: 66.6667%; /* Two-thirds width for text */
+    }
 
-            .image-container {
-                width: 33.333333%;
-                /* One-third of the width for the image */
-            }
-        }
+    .image-container {
+        width: 33.3333%; /* One-third width for the image */
+    }
+
+    .image {
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+        
+
+        
     </style>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <!-- This site is optimized with the Yoast SEO plugin v23.0 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -785,6 +816,39 @@
             content: "+";
         }
     </style>
+
+
+
+<style>
+    /* Default logo styles for large screens */
+  .logo_wrapper img {
+      width: 150px; /* Set a default width for the logo */
+      height: auto; /* Maintain aspect ratio */
+      transition: all 0.3s ease; /* Smooth transition for size changes */
+  }
+  
+  @media (max-width: 992px) {
+      .logo_wrapper img {
+          width: 120px; /* Smaller width for medium screens */
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .logo_wrapper img {
+          width: 100px; /* Even smaller for tablets */
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .logo_wrapper img {
+          width: 150px !important;
+            height: 110px !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+      }
+  }
+  
+  </style>
     <noscript>
         <style>
             .wpb_animate_when_almost_visible {
@@ -817,13 +881,13 @@
                                             <img itemprop="image" class="normal"
                                                 src="../wp-content/uploads/2024/04/logoN.png" alt="Logo"> <img
                                                 itemprop="image" class="light"
-                                                src="../wp-content/uploads/2024/04/logo.png" alt="Logo" /> <img
+                                                src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" /> <img
                                                 itemprop="image" class="dark"
-                                                src="../wp-content/uploads/2024/04/logo.png" alt="Logo" /> <img
+                                                src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" /> <img
                                                 itemprop="image" class="sticky"
                                                 src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" /> <img
                                                 itemprop="image" class="mobile"
-                                                src="../wp-content/uploads/2024/04/logo.png" alt="Logo" /> </a>
+                                                src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" /> </a>
                                     </div>
                                 </div>
                             </div>

@@ -983,6 +983,38 @@
         margin: 0 !important;
       }
     </style>
+
+
+<style>
+  /* Default logo styles for large screens */
+.logo_wrapper img {
+    width: 150px; /* Set a default width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    transition: all 0.3s ease; /* Smooth transition for size changes */
+}
+
+@media (max-width: 992px) {
+    .logo_wrapper img {
+        width: 120px; /* Smaller width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo_wrapper img {
+        width: 100px; /* Even smaller for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo_wrapper img {
+        width: 150px !important;
+          height: 100px !important;
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+    }
+}
+
+</style>
     <meta
       name="generator"
       content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."
@@ -1167,7 +1199,7 @@
                         <img
                           itemprop="image"
                           class="mobile"
-                          src="../wp-content/uploads/2024/04/logo.png"
+                          src="../wp-content/uploads/2024/04/logoN.png"
                           alt="Logo"
                         />
                       </a>

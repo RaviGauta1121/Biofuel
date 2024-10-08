@@ -42,7 +42,6 @@
 	place-items: center;
 	overflow: hidden;
 	padding: 2rem;
-	/* margin-bottom: 2rem; */
 }
 
 .slide-track {
@@ -56,15 +55,15 @@
 		transform: translateX(0); /* Start position */
 	}
 	100% {
-		transform: translateX(calc(-250px * 3)); /* Move to show the next set of images */
+		transform: translateX(calc(-250px * 3)); /* Moves the images continuously */
 	}
 }
 
-
-.client{
+.client {
 	text-align: center;
-	
 	color: #7dda26;
+	font-size: 2rem;
+	margin-bottom: 20px;
 }
 
 .slide {
@@ -81,7 +80,7 @@ img {
 }
 
 img:hover {
-	transform: scale(1.05); /* Scale up on hover for a zoom effect */
+	transform: scale(1.05); /* Zoom effect on hover */
 }
 
 .slider::before,
@@ -102,6 +101,45 @@ img:hover {
 	right: 0;
 	transform: rotateZ(180deg);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.slider {
+		padding: 1rem;
+	}
+
+	.slide-track {
+		width: calc(200px * 6); /* Adjust for smaller screens */
+	}
+
+	.slide {
+		width: 200px;
+	}
+
+	.client {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.slider {
+		padding: 0.5rem;
+	}
+
+	.slide-track {
+		width: calc(150px * 6); /* Smaller images for mobile */
+	}
+
+	.slide {
+		width: 150px;
+	}
+
+	.client {
+		font-size: 1.2rem;
+		margin-right: 32rem;
+	}
+}
+
 
 
 </style>
@@ -164,7 +202,7 @@ img:hover {
 		.vc_custom_1712229586883 {
 			padding-top: 7px !important;
 		}
-	</>
+	</style>
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 	<!-- This site is optimized with the Yoast SEO plugin v23.0 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -214,7 +252,7 @@ img:hover {
 			background: none !important;
 			padding: 0 !important;
 		}
-	</style>
+	</>
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='wp-includes/css/dist/block-library/style.min109c.css?ver=6.6.2' type='text/css' media='all' />
 	<style id='classic-theme-styles-inline-css' type='text/css'>
@@ -708,6 +746,38 @@ img:hover {
 			content: "+";
 		}
 	</style>
+
+
+<style>
+	/* Default logo styles for large screens */
+  .logo_wrapper img {
+	  width: 150px; /* Set a default width for the logo */
+	  height: auto; /* Maintain aspect ratio */
+	  transition: all 0.3s ease; /* Smooth transition for size changes */
+  }
+  
+  @media (max-width: 992px) {
+	  .logo_wrapper img {
+		  width: 120px; /* Smaller width for medium screens */
+	  }
+  }
+  
+  @media (max-width: 768px) {
+	  .logo_wrapper img {
+		  width: 100px; /* Even smaller for tablets */
+	  }
+  }
+  
+  @media (max-width: 576px) {
+	  .logo_wrapper img {
+		  width: 150px !important;
+			height: 100px !important;
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+	  }
+  }
+  
+  </style>
 	<noscript>
 		<style>
 			.wpb_animate_when_almost_visible {
@@ -835,6 +905,13 @@ img:hover {
 										class="menu-item menu-item-type-post_type menu-item-object-page "><a
 											href="quality-testing/index.html" class=""><span>Quality
 												Testing</span></a><span class="mobile_arrow"><i
+												class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+									</li>
+
+
+									<li id="mobile-menu-item-527"
+										class="menu-item menu-item-type-post_type menu-item-object-page "><a
+											href="founder/index.html" class=""><span>Founders</span></a><span class="mobile_arrow"><i
 												class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
 									</li>
 
