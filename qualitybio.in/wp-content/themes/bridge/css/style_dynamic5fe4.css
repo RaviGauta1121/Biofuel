@@ -142,7 +142,7 @@
 			.qode-horizontal-timeline .qode-timeline-navigation a.qode-next
 			{
 
-			color: #f57921;
+			color: #13e80f;
 			}
 
 			.box_image_with_border:hover,
@@ -295,7 +295,7 @@
 
 
 					header.sticky .header_bottom{
-			background-color: rgba(39,40,38,1) !important;
+			background-color:#e5e5e5 !important;
 			}
 		
 		
@@ -370,10 +370,10 @@
 		
 		
 					nav.main_menu ul li:hover a {
-			 color: #f57921; 			}
+			 color: #0aee0a; 			}
 		
 					nav.main_menu ul li.active a {
-			color: #f57921			}
+			color: #44f010			}
 			
 		
 
@@ -746,17 +746,17 @@
 		
 					#back_to_top span i,
 			#back_to_top span span{
-			color: #f57921;
+			color: #44e413;
 			}
 					#back_to_top:hover span i,
 			#back_to_top:hover span span{
-			color: #f47f2c;
+			color: #44e413;
 			}
 		
 					#back_to_top > span{
-			background-color: rgba(0,10,0,0);border-color: rgba(245,121,33,1);border-width:4px;border-style: solid			}
+			background-color: rgba(0,10,0,0);border-color: #44e413;border-width:4px;border-style: solid			}
 					#back_to_top:hover > span{
-			background-color: rgba(0,10,0,0);border-color: rgba(244,131,51,1)			}
+			background-color: rgba(0,10,0,0);border-color: #44e413			}
 		
 		
 		
