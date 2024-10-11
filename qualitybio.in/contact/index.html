@@ -12,7 +12,9 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="../xmlrpc.php" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<style type="text/css" data-type="vc_shortcodes-custom-css">
 		.vc_custom_1711468760122 {
@@ -20,6 +22,7 @@
 			padding-bottom: 80px !important;
 			background-color: #fcfcfc !important;
 		}
+
 		.contact-bg {
 			height: 40vh;
 			background: linear-gradient(rgba(212, 199, 199, 0.5), rgba(197, 155, 155, 0.8)), url(image/contact-bg.jpg);
@@ -86,105 +89,156 @@
 		}
 
 
-.contact-info {
-  text-align: left; /* Align text to the left */
-  padding: 2rem 0; /* Add some padding */
-}
+		.contact-info {
+			text-align: left;
+			/* Align text to the left */
+			padding: 2rem 0;
+			/* Add some padding */
+		}
 
-.contact-item {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically center items */
-  margin: 0.8rem 0; /* Vertical spacing between items */
-}
+		.contact-item {
+			display: flex;
+			/* Use flexbox for layout */
+			align-items: center;
+			/* Vertically center items */
+			margin: 0.8rem 0;
+			/* Vertical spacing between items */
+		}
 
-.icon {
-  font-size: 3rem; /* Increase the icon size */
-  color: #13de0f; /* Optional: change icon color */
-  margin-right: 1rem; /* Space between icon and text */
-}
+		.icon {
+			font-size: 3rem;
+			/* Increase the icon size */
+			color: #13de0f;
+			/* Optional: change icon color */
+			margin-right: 1rem;
+			/* Space between icon and text */
+		}
 
-.label {
-  font-weight: 500; /* Optional: make the label text bold */
-  font-size: 1.1rem; /* Optional: increase font size */
-}
+		.label {
+			font-weight: 500;
+			/* Optional: make the label text bold */
+			font-size: 1.1rem;
+			/* Optional: increase font size */
+		}
 
-.text {
-  display: block; /* Stack the text block */
-  color: darkgreen; /* Color for the text */
-  font-weight: 600; /* Optional: bold text */
-  padding-top: 0.4rem; /* Space between label and text */
-}
-
-
-.sendmsg {
-  position: relative; /* Set the position to relative for the pseudo-element */
-  display: inline-block; /* Make the h2 behave like an inline element */
-  margin: 0; /* Remove default margin */
-  padding-bottom: 0.5rem; /* Space between text and line */
-  
-}
-
-.sendmsg::after {
-  content: ""; /* Required for pseudo-elements */
-  display: block; /* Make the pseudo-element a block */
-  height: 4px; /* Height of the line */
-  background-color: rgb(82, 232, 18); /* Color of the line */
-   /* Set a specific width for the line */
-  margin: 0 auto; /* Center the line */
-}
+		.text {
+			display: block;
+			/* Stack the text block */
+			color: darkgreen;
+			/* Color for the text */
+			font-weight: 600;
+			/* Optional: bold text */
+			padding-top: 0.4rem;
+			/* Space between label and text */
+		}
 
 
+		.sendmsg {
+			position: relative;
+			/* Set the position to relative for the pseudo-element */
+			display: inline-block;
+			/* Make the h2 behave like an inline element */
+			margin: 0;
+			/* Remove default margin */
+			padding-bottom: 0.5rem;
+			/* Space between text and line */
 
-.form-row {
-  display: flex; /* Use flexbox to align the input fields in a row */
-  justify-content: space-between; /* Distribute space evenly between items */
-  width: 100%; /* Make the row take the full width */
-  gap: 2rem; /* Space between input fields */
-}
+		}
 
-.form-control {
-  flex: 1; /* Make inputs take equal space */
-  min-width: 200px; /* Set a minimum width for inputs */
-   /* Set a maximum width for inputs to prevent stretching too much */
-  width: 100%; /* Make inputs take the full available width of their container */
-  border: 1.5px solid #c7c7c7; /* Border for input fields */
-  border-radius: 5px; /* Rounded corners */
-  padding: 0.7rem; /* Padding inside input fields */
-  margin: 0.6rem 0; /* Margin for vertical spacing */
-  font-family: 'Open Sans', sans-serif; /* Font family */
-  font-size: 1rem; /* Font size */
-  outline: 0; /* Remove outline on focus */
-}
-
-.form-control:focus {
-  box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1); /* Focus shadow effect */
-}
-
-textarea.form-control {
-  width: 100%; /* Make textarea take full width */
-  resize: none; /* Disable resizing */
-}
+		.sendmsg::after {
+			content: "";
+			/* Required for pseudo-elements */
+			display: block;
+			/* Make the pseudo-element a block */
+			height: 4px;
+			/* Height of the line */
+			background-color: rgb(82, 232, 18);
+			/* Color of the line */
+			/* Set a specific width for the line */
+			margin: 0 auto;
+			/* Center the line */
+		}
 
 
 
+		.form-row {
+			display: flex;
+			/* Use flexbox to align the input fields in a row */
+			justify-content: space-between;
+			/* Distribute space evenly between items */
+			width: 100%;
+			/* Make the row take the full width */
+			gap: 2rem;
+			/* Space between input fields */
+		}
 
-.send-btn {
-  font-family: 'Open Sans', sans-serif; /* Font family */
-  font-size: 1rem; /* Font size */
-  text-transform: uppercase; /* Uppercase text */
-  color: #fff; /* Text color */
-  background: #28ce0e; /* Background color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 0.7rem 1.5rem; /* Padding inside the button */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.4s ease; /* Transition for hover effects */
-}
+		.form-control {
+			flex: 1;
+			/* Make inputs take equal space */
+			min-width: 200px;
+			/* Set a minimum width for inputs */
+			/* Set a maximum width for inputs to prevent stretching too much */
+			width: 100%;
+			/* Make inputs take the full available width of their container */
+			border: 1.5px solid #c7c7c7;
+			/* Border for input fields */
+			border-radius: 5px;
+			/* Rounded corners */
+			padding: 0.7rem;
+			/* Padding inside input fields */
+			margin: 0.6rem 0;
+			/* Margin for vertical spacing */
+			font-family: 'Open Sans', sans-serif;
+			/* Font family */
+			font-size: 1rem;
+			/* Font size */
+			outline: 0;
+			/* Remove outline on focus */
+		}
 
-/* Hover effect for the submit button */
-.send-btn:hover {
-  background: #058c1a; /* Darker background on hover */
-}
+		.form-control:focus {
+			box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+			/* Focus shadow effect */
+		}
+
+		textarea.form-control {
+			width: 100%;
+			/* Make textarea take full width */
+			resize: none;
+			/* Disable resizing */
+		}
+
+
+
+
+		.send-btn {
+			font-family: 'Open Sans', sans-serif;
+			/* Font family */
+			font-size: 1rem;
+			/* Font size */
+			text-transform: uppercase;
+			/* Uppercase text */
+			color: #fff;
+			/* Text color */
+			background: #28ce0e;
+			/* Background color */
+			border: none;
+			/* Remove border */
+			border-radius: 5px;
+			/* Rounded corners */
+			padding: 0.7rem 1.5rem;
+			/* Padding inside the button */
+			cursor: pointer;
+			/* Pointer cursor on hover */
+			transition: all 0.4s ease;
+			/* Transition for hover effects */
+		}
+
+		/* Hover effect for the submit button */
+		.send-btn:hover {
+			background: #058c1a;
+			/* Darker background on hover */
+		}
 
 
 
@@ -253,7 +307,7 @@ textarea.form-control {
 
 			.contact-form {
 				justify-content: space-evenly;
-				
+
 				align-items: center;
 			}
 		}
@@ -269,109 +323,127 @@ textarea.form-control {
 
 
 
-@media (max-width: 1200px) {
-	.contact-body {
-		padding: 0 2rem;
-	}
-	.contact-info {
-		padding: 1.5rem 0;
-	}
-	.form-row {
-		gap: 1.5rem; 
-	}
-}
+		@media (max-width: 1200px) {
+			.contact-body {
+				padding: 0 2rem;
+			}
 
-@media (max-width: 992px) {
-	.contact-info {
-		text-align: center;
-	}
-	.contact-item {
-		flex-direction: column; 
-		text-align: center; 
-		margin: 1rem 0; 
-	}
-	.icon {
-		margin-right: 0; 
-		margin-bottom: 0.5rem; 
-	}
-	.form-row {
-		flex-direction: column; 
-	}
-}
+			.contact-info {
+				padding: 1.5rem 0;
+			}
 
-@media (max-width: 768px) {
-	.contact-body {
-		padding: 0 1.5rem;
-	}
-	.contact-info {
-		padding: 1rem 0;
-	}
-	.sendmsg {
-		font-size: 1.8rem; 
-	}
-	.form-control {
-		font-size: 0.9rem; 
-	}
-}
+			.form-row {
+				gap: 1.5rem;
+			}
+		}
 
-@media (max-width: 576px) {
-	.contact-bg h2 {
-		font-size: 2rem; 
-	}
-	.contact-bg h3 {
-		font-size: 1.1rem;
-	}
-	.form-row {
-		gap: 1rem; 
-	}
-	.contact-item {
-		margin: 1.2rem 0;
-	}
-	.form-control {
-		padding: 0.6rem; 
-		font-size: 0.9rem; 
-	}
-	textarea.form-control {
-		cols: 120; 
-	}
-	.send-btn {
-		font-size: 0.9rem; 
-		padding: 0.6rem 1.2rem; 
-	}
-}
+		@media (max-width: 992px) {
+			.contact-info {
+				text-align: center;
+			}
 
-@media (max-width: 480px) {
-	.contact-body {
-		padding: 0 2rem;
-	}
-	.contact-info {
-		text-align: center;
-		padding: 1rem 0;
-	}
-	.contact-item {
-		margin: 1.5rem 0;
-	}
-	.icon {
-		font-size: 2.5rem; 
-	}
-	.form-row {
-		gap: 0.8rem; 
-	}
-	.form-control {
-		padding: 0.5rem; 
-		font-size: 0.8rem; 
-	}
-	textarea.form-control {
-		cols: 80;
-	}
-	.send-btn {
-		font-size: 0.85rem;
-		padding: 0.5rem 1rem;
-	}
-}
+			.contact-item {
+				flex-direction: column;
+				text-align: center;
+				margin: 1rem 0;
+			}
 
+			.icon {
+				margin-right: 0;
+				margin-bottom: 0.5rem;
+			}
 
+			.form-row {
+				flex-direction: column;
+			}
+		}
 
+		@media (max-width: 768px) {
+			.contact-body {
+				padding: 0 1.5rem;
+			}
+
+			.contact-info {
+				padding: 1rem 0;
+			}
+
+			.sendmsg {
+				font-size: 1.8rem;
+			}
+
+			.form-control {
+				font-size: 0.9rem;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.contact-bg h2 {
+				font-size: 2rem;
+			}
+
+			.contact-bg h3 {
+				font-size: 1.1rem;
+			}
+
+			.form-row {
+				gap: 1rem;
+			}
+
+			.contact-item {
+				margin: 1.2rem 0;
+			}
+
+			.form-control {
+				padding: 0.6rem;
+				font-size: 0.9rem;
+			}
+
+			textarea.form-control {
+				cols: 120;
+			}
+
+			.send-btn {
+				font-size: 0.9rem;
+				padding: 0.6rem 1.2rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.contact-body {
+				padding: 0 2rem;
+			}
+
+			.contact-info {
+				text-align: center;
+				padding: 1rem 0;
+			}
+
+			.contact-item {
+				margin: 1.5rem 0;
+			}
+
+			.icon {
+				font-size: 2.5rem;
+			}
+
+			.form-row {
+				gap: 0.8rem;
+			}
+
+			.form-control {
+				padding: 0.5rem;
+				font-size: 0.8rem;
+			}
+
+			textarea.form-control {
+				cols: 80;
+			}
+
+			.send-btn {
+				font-size: 0.85rem;
+				padding: 0.5rem 1rem;
+			}
+		}
 	</style>
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<!-- This site is optimized with the Yoast SEO plugin v23.0 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -825,7 +897,7 @@ textarea.form-control {
 	<link rel='stylesheet' id='bridge-style-handle-google-fonts-css'
 		href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C300italic%2C400italic%2C700italic%7CPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C300italic%2C400italic%2C700italic&amp;subset=latin%2Clatin-ext&amp;ver=1.0.0'
 		type='text/css' media='all' />
-	
+
 	<script type="text/javascript" src="../wp-content/themes/bridge/js/plugins/ScrollToPlugin.min109c.js?ver=6.6.2"
 		id="ScrollToPlugin-js"></script>
 	<script type="text/javascript" id="layerslider-greensock-js-extra">
@@ -913,36 +985,40 @@ textarea.form-control {
 	</style>
 
 
-<style>
-	/* Default logo styles for large screens */
-  .logo_wrapper img {
-	  width: 150px; /* Set a default width for the logo */
-	  height: auto; /* Maintain aspect ratio */
-	  transition: all 0.3s ease; /* Smooth transition for size changes */
-  }
-  
-  @media (max-width: 992px) {
-	  .logo_wrapper img {
-		  width: 120px; /* Smaller width for medium screens */
-	  }
-  }
-  
-  @media (max-width: 768px) {
-	  .logo_wrapper img {
-		  width: 100px; /* Even smaller for tablets */
-	  }
-  }
-  
-  @media (max-width: 576px) {
-	  .logo_wrapper img {
-		  width: 150px !important;
-			height: 100px !important;
-			margin-top: 0 !important;
-			padding-top: 0 !important;
-	  }
-  }
-  
-  </style>
+	<style>
+		/* Default logo styles for large screens */
+		.logo_wrapper img {
+			width: 150px;
+			/* Set a default width for the logo */
+			height: auto;
+			/* Maintain aspect ratio */
+			transition: all 0.3s ease;
+			/* Smooth transition for size changes */
+		}
+
+		@media (max-width: 992px) {
+			.logo_wrapper img {
+				width: 120px;
+				/* Smaller width for medium screens */
+			}
+		}
+
+		@media (max-width: 768px) {
+			.logo_wrapper img {
+				width: 100px;
+				/* Even smaller for tablets */
+			}
+		}
+
+		@media (max-width: 576px) {
+			.logo_wrapper img {
+				width: 150px !important;
+				height: 100px !important;
+				margin-top: 0 !important;
+				padding-top: 0 !important;
+			}
+		}
+	</style>
 	<noscript>
 		<style>
 			.wpb_animate_when_almost_visible {
@@ -1024,11 +1100,11 @@ textarea.form-control {
 												class="menu_icon blank fa"></i><span>Quality Testing</span><span
 												class="plus"></span></a></li>
 
-												<li id="nav-menu-item-527"
-												class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-													href="../founder/index.html" class=""><i
-														class="menu_icon blank fa"></i><span>Founders</span><span
-														class="plus"></span></a></li>
+									<li id="nav-menu-item-527"
+										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
+											href="../founder/index.html" class=""><i
+												class="menu_icon blank fa"></i><span>Founders</span><span
+												class="plus"></span></a></li>
 
 									<li id="nav-menu-item-564"
 										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-562 current_page_item active narrow">
@@ -1070,11 +1146,12 @@ textarea.form-control {
 									</li>
 
 									<li id="mobile-menu-item-527"
-									class="menu-item menu-item-type-post_type menu-item-object-page "><a
-										href="../founder/index.html" class=""><span>Founders</span></a><span class="mobile_arrow"><i
-											class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
-								</li>
-									
+										class="menu-item menu-item-type-post_type menu-item-object-page "><a
+											href="../founder/index.html" class=""><span>Founders</span></a><span
+											class="mobile_arrow"><i class="fa fa-angle-right"></i><i
+												class="fa fa-angle-down"></i></span>
+									</li>
+
 									<li id="mobile-menu-item-564"
 										class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-562 current_page_item active">
 										<a href="index.html" class=" current "><span>Contact</span></a><span
@@ -1119,57 +1196,58 @@ textarea.form-control {
 			<div class="contact-body">
 				<div class="contact-info">
 					<div class="contact-item">
-					  <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-					  <!-- <span class="label">Phone No.</span> -->
-					  <span class="text">+91 9785463775</span>
+						<span class="icon"><i class="fas fa-mobile-alt"></i></span>
+						<!-- <span class="label">Phone No.</span> -->
+						<span class="text">+91 9785463775</span>
 					</div>
 					<div class="contact-item">
-					  <span class="icon"><i class="fas fa-envelope-open"></i></span>
-					  <!-- <span class="label">E-mail</span> -->
-					  <span class="text">www.Ganeshbiofuel.com</span>
+						<span class="icon"><i class="fas fa-envelope-open"></i></span>
+						<!-- <span class="label">E-mail</span> -->
+						<span class="text">www.Ganeshbiofuel.com</span>
 					</div>
 					<div class="contact-item">
-					  <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-					  <!-- <span class="label">Address</span> -->
-					  <span class="text">Panchayat Hotel, Ground Block 1575/1577 Ganeshlal Goyal Farms, SH51, Deelod Hathi, Baran, Rajasthan 325219</span>
+						<span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+						<!-- <span class="label">Address</span> -->
+						<span class="text">Panchayat Hotel, Ground Block 1575/1577 Ganeshlal Goyal Farms, SH51, Deelod
+							Hathi, Baran, Rajasthan 325219</span>
 					</div>
-				  </div>
-				  
+				</div>
+
 
 				<div>
-					<h2 class="sendmsg">Send a message</h2>  
-					
-				  </div>
-				  
+					<h2 class="sendmsg">Send a message</h2>
+
+				</div>
+
 
 
 				<div class="contact-form">
 					<form>
-					  <!-- Full Name, Email, and Phone in a single row -->
-					  <div class="form-row">
-						<input type="text" class="form-control" placeholder="Full Name">
-						<input type="email" class="form-control" placeholder="E-mail">
-						<input type="text" class="form-control" placeholder="Phone">
-					  </div>
-				  
-					  <!-- Textarea for message -->
-					  <div >
-						<textarea rows="4"  cols="140" placeholder="Message" class="form-control"></textarea>
-					  </div>
-					  
-					  <!-- Submit button -->
-					  <div class="sent_button">
-						<input type="submit" class="send-btn" value="Send Message">
-					  </div>
+						<!-- Full Name, Email, and Phone in a single row -->
+						<div class="form-row">
+							<input type="text" class="form-control" placeholder="Full Name">
+							<input type="email" class="form-control" placeholder="E-mail">
+							<input type="text" class="form-control" placeholder="Phone">
+						</div>
+
+						<!-- Textarea for message -->
+						<div>
+							<textarea rows="4" cols="140" placeholder="Message" class="form-control"></textarea>
+						</div>
+
+						<!-- Submit button -->
+						<div class="sent_button">
+							<input type="submit" class="send-btn" value="Send Message">
+						</div>
 					</form>
 					<div>
-					  <img src="image/contact-png.png" alt="">
+						<img src="image/contact-png.png" alt="">
 					</div>
-				  </div>
-				  
-			  </div>
-			  
-			  
+				</div>
+
+			</div>
+
+
 
 
 			<!-- <div class="map">
@@ -1302,27 +1380,12 @@ textarea.form-control {
 										<div class="footer_bottom">
 											<div class="textwidget custom-html-widget"><span
 													class="qode-footer-bottom-follow" style="padding-right:20px;">Follow
-													us</span><span class='q_social_icon_holder normal_social'
-													data-color=#ffffff data-hover-color=#f57921><a itemprop='url'
-														href='www.twitter.html' target='_self' rel="noopener"><span
-															aria-hidden="true"
-															class="qode_icon_font_elegant social_twitter fa-lg simple_social"
-															style="color: #ffffff;"></span></a></span><span
+													us</span><span
 													class='q_social_icon_holder normal_social' data-color=#ffffff
 													data-hover-color=#f57921><a itemprop='url'
 														href='https://www.linkedin.com/company/quality-group-i/'
 														target='_blank' rel="noopener"><span aria-hidden="true"
 															class="qode_icon_font_elegant social_linkedin fa-lg simple_social"
-															style="color: #ffffff;"></span></a></span><span
-													class='q_social_icon_holder normal_social' data-color=#ffffff
-													data-hover-color=#f57921><a itemprop='url' href='www.instagram.html'
-														target='_self' rel="noopener"><span aria-hidden="true"
-															class="qode_icon_font_elegant social_instagram fa-lg simple_social"
-															style="color: #ffffff;"></span></a></span><span
-													class='q_social_icon_holder normal_social' data-color=#ffffff
-													data-hover-color=#f57921><a itemprop='url' href='www.facebook.html'
-														target='_self' rel="noopener"><span aria-hidden="true"
-															class="qode_icon_font_elegant social_facebook fa-lg simple_social"
 															style="color: #ffffff;"></span></a></span>
 											</div>
 										</div>
