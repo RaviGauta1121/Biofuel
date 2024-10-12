@@ -773,14 +773,87 @@ img:hover {
   
   @media (max-width: 576px) {
 	  .logo_wrapper img {
-		  width: 150px !important;
-			height: 100px !important;
+		  width: 65px !important;
+			
 			margin-top: 0 !important;
 			padding-top: 0 !important;
 	  }
   }
   
+
+
+
+  
   </style>
+
+
+
+<style>
+
+
+	/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbarr {
+  background-color: #e8dddd; /* You can change this */
+  padding: .5rem;
+  width: 100%;
+  position: -webkit-sticky; /* For Safari */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  border-radius: .5rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto; /* Centers the content */
+  width: 100vw;
+}
+
+.nav-logo {
+  width: 50px; /* Adjust the size of the logo as needed */
+  margin-left: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 4rem; /* Adjust the gap for even spacing */
+margin-right: 4rem;
+  
+}
+
+.nav-menu li {
+  text-transform: uppercase;
+ 
+}
+
+.nav-menu a {
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #4bc617; /* Change this hover color as needed */
+}
+
+@media (max-width: 992px) {
+	.navbarr {
+		display: none;
+	  }
+  }
+
+</style>
 	<noscript>
 		<style>
 			.wpb_animate_when_almost_visible {
@@ -799,7 +872,20 @@ img:hover {
 
 			<!-- Google Analytics start -->
 			<!-- Google Analytics end -->
-
+			<nav class="navbarr">
+				<div class="nav-container">
+				  <img src="wp-content/uploads/2024/04/logoN.png" alt="Logo" class="nav-logo">
+				  <ul class="nav-menu">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="about/index.html">About</a></li>
+					<li><a href="products/index.html">products</a></li>
+					<li><a href="impact-and-sustainability/index.html">Frequently asked quetions</a></li>
+					<li><a href="quality-testing/index.html"> Quality testing</a></li>
+					<li><a href="founder/index.html">Founders</a></li>
+					<li><a href="contact/index.html">Contact</a></li>
+				  </ul>
+				</div>
+			  </nav>
 
 			<header class=" scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
 				<div class="header_inner clearfix">
@@ -814,67 +900,12 @@ img:hover {
 								<div class="logo_wrapper">
 									<div class="q_logo">
 										<a itemprop="url" href="index.html">
-											<img itemprop="image" class="normal"
-												src="wp-content/uploads/2024/04/logoN.png" alt="Logo"> <img
-												itemprop="image" class="light"
-												src="wp-content/uploads/2024/04/logoN.png" alt="Logo" /> <img
-												itemprop="image" class="dark" src="wp-content/uploads/2024/04/logoN.png"
-												alt="Logo" /> <img itemprop="image" class="sticky"
-												src="wp-content/uploads/2024/04/logoN.png" alt="Logo" /> <img
+									 <img
 												itemprop="image" class="mobile"
 												src="wp-content/uploads/2024/04/logoN.png" alt="Logo" /> </a>
 									</div>
 								</div>
 							</div>
-							<div class="header_inner_right">
-								<div class="side_menu_button_wrapper right">
-									<div class="side_menu_button">
-									</div>
-								</div>
-							</div>
-
-
-							<nav class="main_menu drop_down right">
-								<ul id="menu-main-menu" class="">
-									<li id="nav-menu-item-245"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-241 current_page_item active narrow">
-										<a href="index.html" class=" current "><i
-												class="menu_icon blank fa"></i><span>Home</span><span
-												class="plus"></span></a>
-									</li>
-									<li id="nav-menu-item-360"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="about/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>About</span><span
-												class="plus"></span></a></li>
-									<li id="nav-menu-item-557"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="products/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>Products</span><span
-												class="plus"></span></a></li>
-									<li id="nav-menu-item-561"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="impact-and-sustainability/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>Frequently Asked
-												Question</span><span class="plus"></span></a></li>
-									<li id="nav-menu-item-527"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="quality-testing/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>Quality Testing</span><span
-												class="plus"></span></a></li>
-									<li id="nav-menu-item-527"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="founder/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>Founders</span><span
-												class="plus"></span></a></li>
-
-									<li id="nav-menu-item-564"
-										class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a
-											href="contact/index.html" class=""><i
-												class="menu_icon blank fa"></i><span>Contact</span><span
-												class="plus"></span></a></li>
-								</ul>
-							</nav>
 							<nav class="mobile_menu">
 								<ul id="menu-main-menu-1" class="">
 									<li id="mobile-menu-item-245"
@@ -1212,10 +1243,10 @@ img:hover {
 																		class="vc_single_image-wrapper   vc_box_border_grey">
 																		<img loading="lazy" decoding="async" width="863"
 																			height="665"
-																			src="https://img.freepik.com/free-photo/photorealistic-perspective-wood-logs_23-2151239319.jpg"
+																			src="https://4.imimg.com/data4/VW/CP/MY-31217636/biomass-briquette.jpg"
 																			class="vc_single_image-img attachment-full"
 																			alt=""
-																			srcset="https://t3.ftcdn.net/jpg/06/74/87/86/360_F_674878684_jKmrqG9V5XdPZzeHX1l1DeFyE1w7TzWN.jpg"
+																			srcset="https://img1.exportersindia.com/product_images/bc-small/2020/5/7260873/biomass-briquettes-1588678665-5411460.jpeg"
 																			sizes="(max-width: 880px) 100vw, 863px" />
 																	</div>
 																</div>
@@ -1294,10 +1325,10 @@ img:hover {
 																		class="vc_single_image-wrapper   vc_box_border_grey">
 																		<img loading="lazy" decoding="async" width="863"
 																			height="665"
-																			src="https://img.freepik.com/free-photo/photorealistic-perspective-wood-logs_23-2151239319.jpg"
+																			src="https://media.licdn.com/dms/image/D5612AQGH9dqmBYDMEw/article-cover_image-shrink_720_1280/0/1717563409174?e=2147483647&v=beta&t=zjCguMHSUWAPtuFVOxCd9InA2FrIFu011BAqMmb-XAo"
 																			class="vc_single_image-img attachment-full"
 																			alt=""
-																			srcset="https://img.freepik.com/free-photo/photorealistic-perspective-wood-logs_23-2151239319.jpg"
+																			srcset="https://media.licdn.com/dms/image/D5612AQGH9dqmBYDMEw/article-cover_image-shrink_720_1280/0/1717563409174?e=2147483647&v=beta&t=zjCguMHSUWAPtuFVOxCd9InA2FrIFu011BAqMmb-XAo"
 																			sizes="(max-width: 863px) 100vw, 980px" />
 																	</div>
 																</div>
@@ -1881,7 +1912,7 @@ img:hover {
 													<div id="text-4" class="widget widget_text">
 														<h5>Contact Details</h5>
 														<div class="textwidget">
-															<p><strong>Address:</strong> Panchayat Hotel, Ground Block
+															<p><strong>Address:</strong> Panchayat Headquater, Ground Block
 																1575/1577 Ganeshlal Goyal Farms,
 																SH51, Deelod Hathi, Baran,
 																Rajasthan 325219</p>

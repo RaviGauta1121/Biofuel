@@ -890,13 +890,19 @@
     }
 
     @media (max-width: 576px) {
-      .logo_wrapper img {
-        width: 150px !important;
-        height: 100px !important;
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-      }
-    }
+			.logo_wrapper img {
+				width: 65px !important;
+				margin-top: 0 !important;
+				padding-top: 0 !important;
+			}
+
+			.contacts{
+	margin-top: 2rem !important;
+}
+		}
+    .contacts{
+	margin-top: 7rem;
+}
   </style>
   <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
   <meta name="generator"
@@ -997,6 +1003,74 @@
       content: "+";
     }
   </style>
+
+
+<style>
+
+
+	/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbarr {
+  background-color: #e8dddd; /* You can change this */
+  padding: .5rem;
+  width: 100%;
+  position: -webkit-sticky; /* For Safari */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  border-radius: .5rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto; /* Centers the content */
+  width: 100vw;
+}
+
+.nav-logo {
+  width: 50px; /* Adjust the size of the logo as needed */
+  margin-left: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 4rem; /* Adjust the gap for even spacing */
+margin-right: 4rem;
+  
+}
+
+.nav-menu li {
+  text-transform: uppercase;
+ 
+}
+
+.nav-menu a {
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #4bc617; /* Change this hover color as needed */
+}
+
+@media (max-width: 992px) {
+	.navbarr {
+		display: none;
+	  }
+  }
+
+</style>
   <noscript>
     <style>
       .wpb_animate_when_almost_visible {
@@ -1013,70 +1087,40 @@
     <div class="wrapper_inner">
       <!-- Google Analytics start -->
       <!-- Google Analytics end -->
-
-      <header class="scroll_header_top_area stick transparent scrolled_not_transparent page_header">
-        <div class="header_inner clearfix">
-          <div class="header_top_bottom_holder">
-            <div class="header_bottom clearfix" style="background-color: rgba(255, 255, 255, 0)">
-              <div class="header_inner_left">
-                <div class="mobile_menu_button">
-                  <span>
-                    <i class="qode_icon_font_awesome fa fa-bars"></i>
-                  </span>
-                </div>
-                <div class="logo_wrapper">
-                  <div class="q_logo">
-                    <a itemprop="url" href="../index.html">
-                      <img itemprop="image" class="normal" src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" />
-                      <img itemprop="image" class="light" src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" />
-                      <img itemprop="image" class="dark" src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" />
-                      <img itemprop="image" class="sticky" src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" />
-                      <img itemprop="image" class="mobile" src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="header_inner_right">
-                <div class="side_menu_button_wrapper right">
-                  <div class="side_menu_button"></div>
-                </div>
-              </div>
-
-              <nav class="main_menu drop_down right">
-                <ul id="menu-main-menu" class="">
-                  <li id="nav-menu-item-245"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home narrow">
-                    <a href="../index.html" class=""><i class="menu_icon blank fa"></i><span>Home</span><span
-                        class="plus"></span></a>
-                  </li>
-                  <li id="nav-menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page narrow">
-                    <a href="../about/index.html" class=""><i class="menu_icon blank fa"></i><span>About</span><span
-                        class="plus"></span></a>
-                  </li>
-                  <li id="nav-menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page narrow">
-                    <a href="../products/index.html" class=""><i
-                        class="menu_icon blank fa"></i><span>Products</span><span class="plus"></span></a>
-                  </li>
-                  <li id="nav-menu-item-561"
-                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-558 current_page_item active narrow">
-                    <a href="index.html" class="current"><i class="menu_icon blank fa"></i><span>Frequently Asked
-                        Question</span><span class="plus"></span></a>
-                  </li>
-                  <li id="nav-menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page narrow">
-                    <a href="../quality-testing/index.html" class=""><i class="menu_icon blank fa"></i><span>Quality
-                        Testing</span><span class="plus"></span></a>
-                  </li>
-
-                  <li id="nav-menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page narrow">
-                    <a href="../founder/index.html" class=""><i
-                        class="menu_icon blank fa"></i><span>Founders</span><span class="plus"></span></a>
-                  </li>
-                  <li id="nav-menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-page narrow">
-                    <a href="../contact/index.html" class=""><i class="menu_icon blank fa"></i><span>Contact</span><span
-                        class="plus"></span></a>
-                  </li>
-                </ul>
-              </nav>
+      <nav class="navbarr">
+				<div class="nav-container">
+				  <img src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" class="nav-logo">
+				  <ul class="nav-menu">
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="../about/index.html">About</a></li>
+				  <li><a href="../products/index.html">products</a></li>
+				  <li><a href="../impact-and-sustainability/index.html">Frequently asked quetions</a></li>
+				  <li><a href="../quality-testing/index.html"> Quality testing</a></li>
+				  <li><a href="../founder/index.html">Founders</a></li>
+				  <li><a href="../contact/index.html">Contact</a></li>
+				  </ul>
+				</div>
+				</nav>
+			
+				<header class=" scroll_header_top_area  stick transparent scrolled_not_transparent page_header">
+					<div class="header_inner clearfix">
+					  <div class="header_top_bottom_holder">
+			
+						<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);'>
+						  <div class="header_inner_left">
+							<div class="mobile_menu_button">
+							  <span>
+								<i class="qode_icon_font_awesome fa fa-bars "></i> </span>
+							</div>
+							<div class="logo_wrapper">
+							  <div class="q_logo">
+								<a itemprop="url" href="index.html">
+							   <img
+									itemprop="image" class="mobile"
+									src="../wp-content/uploads/2024/04/logoN.png" alt="Logo" /> </a>
+							  </div>
+							</div>
+						  </div>
               <nav class="mobile_menu">
                 <ul id="menu-main-menu-1" class="">
                   <li id="mobile-menu-item-245"
@@ -1137,7 +1181,7 @@
                 <div class="container">
                   <div class="container_inner clearfix">
                     <div class="title_subtitle_holder">
-                      <div class="title_subtitle_holder_inner">
+                      <div class="title_subtitle_holder_inner contacts">
                         <h1><span>Frequently Asked Question </span></h1>
                       </div>
                     </div>
@@ -1322,7 +1366,7 @@
                                 <h5>Contact Details</h5>
                                 <div class="textwidget">
                                   <p>
-                                    <strong>Address:</strong> Panchayat Hotel,
+                                    <strong>Address:</strong> Panchayat Headquater,
                                     Ground Block 1575/1577 Ganeshlal Goyal
                                     Farms, SH51, Deelod Hathi, Baran,
                                     Rajasthan 325219
